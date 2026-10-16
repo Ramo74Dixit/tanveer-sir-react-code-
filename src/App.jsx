@@ -2,6 +2,10 @@ import React from 'react'
 import MyfirstComponent from './components/MyfirstComponent'
 import Card from './components/Card'
 import OrderStatus from './components/OrderStatus'
+import Counter from './components/Counter'
+import HideshowPassword from './components/HideshowPassword'
+import ForminReact from './components/ForminReact'
+import EventPropgationExample from './components/EventPropgationExample'
 // function Greeting({isLoggedIn}){
 //    if(isLoggedIn){
 //     return(
@@ -24,7 +28,11 @@ const App = () => {
   const hasNotification=false;
   return (
       <div>
+        <EventPropgationExample/>
+        <ForminReact/>
         <MyfirstComponent/>
+        <HideshowPassword/>
+        <Counter/>
         <OrderStatus status="pending"/> <br />
         <OrderStatus status="approved"/> <br />
         <OrderStatus status="rejected"/> <br />
