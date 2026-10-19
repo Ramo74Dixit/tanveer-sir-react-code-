@@ -6,6 +6,10 @@ import Counter from './components/Counter'
 import HideshowPassword from './components/HideshowPassword'
 import ForminReact from './components/ForminReact'
 import EventPropgationExample from './components/EventPropgationExample'
+import UseEffectUnderstandingOrder from './components/UseEffectUnderstandingOrder'
+import TimerWithoutCleanup from './components/TimerWithoutCleanup'
+import ApiFetchingThroughUseEffect from './components/ApiFetchingThroughUseEffect'
+import SearchBar from './components/SearchBar'
 // function Greeting({isLoggedIn}){
 //    if(isLoggedIn){
 //     return(
@@ -28,6 +32,10 @@ const App = () => {
   const hasNotification=false;
   return (
       <div>
+        <SearchBar/>
+        <ApiFetchingThroughUseEffect/>
+        <TimerWithoutCleanup/>
+        <UseEffectUnderstandingOrder/>
         <EventPropgationExample/>
         <ForminReact/>
         <MyfirstComponent/>
