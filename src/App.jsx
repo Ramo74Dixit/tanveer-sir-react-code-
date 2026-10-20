@@ -10,6 +10,12 @@ import UseEffectUnderstandingOrder from './components/UseEffectUnderstandingOrde
 import TimerWithoutCleanup from './components/TimerWithoutCleanup'
 import ApiFetchingThroughUseEffect from './components/ApiFetchingThroughUseEffect'
 import SearchBar from './components/SearchBar'
+import ReactTriggerDetecting from './components/ReactTriggerDetecting'
+import ParentReRendering from './components/ParentReRendering'
+import UseRefProof from './components/UseRefProof'
+import FocusInputThroughUseRef from './components/FocusInputThroughUseRef'
+import StopWatch from './components/StopWatch'
+import UseMemoExample from './components/UseMemoExample'
 // function Greeting({isLoggedIn}){
 //    if(isLoggedIn){
 //     return(
@@ -32,6 +38,12 @@ const App = () => {
   const hasNotification=false;
   return (
       <div>
+        <UseMemoExample/>
+        {/* <StopWatch/> */}
+        {/* <FocusInputThroughUseRef/> */}
+        {/* <UseRefProof/> */}
+        {/* <ParentReRendering/>
+        <ReactTriggerDetecting/>
         <SearchBar/>
         <ApiFetchingThroughUseEffect/>
         <TimerWithoutCleanup/>
@@ -43,14 +55,14 @@ const App = () => {
         <Counter/>
         <OrderStatus status="pending"/> <br />
         <OrderStatus status="approved"/> <br />
-        <OrderStatus status="rejected"/> <br />
+        <OrderStatus status="rejected"/> <br /> */}
         {/* <Greeting isLoggedIn={false}/> */}
         {/* And operator  */}
-        {
+        {/* {
         hasNotification && (
           <p>You have a new Notification !! </p>
         )
-        }
+        } */}
       </div>
   )
 
